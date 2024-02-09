@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="style.css">
+<body>
+    <div id="header">
+<div  class="container">
+    <nav>
+<img src="images\logo.png" alt="img" id="logo">
+<ul>
+    <li><a href="#"> Menu </a></li>
+     <li><a href="#"> About </a></li>
+      <li><a href="#"> Service </a></li>
+       <li><a href="#"> Portfolio </a></li>
+        <li><a href="#"> Contact </a></li>
+</ul>
+</nav>
+<div class="header-text">
+<p> Full Stack Developer</p>
+<h1>
+    Hi , I'm <span>Sumit Thakur</span> </br> from India
+</h1>
+</div>
+</div> <!-- First container inside div -->
+
+   </div>  <!-- header close -->
+
+<!-- ---------ABOUT SECTION ------ -->
+<div class="About">
+<div class="container">
+<div  class="row">
+    <div class="coloum1">
+        <img src="images\user.png" alt="aboutMewalaPhoto">
+    </div>
+    <div class="coloum2">
+        <h1 class="subtitle"> About me </h1>
+        <p>  
+           Meet Sumit Thakur, a highly skilled and dynamic IBM Certified full stack developer. With a passion for crafting innovative digital solutions, they possess expertise in front-end and back-end development learned from META .I adept at revolutionizing digital platforms, optimizing user experiences, and architecting scalable cloud-based solutions. Their adaptability, leadership qualities, and strong communication skills make them an invaluable asset in cross-functional environments. Stay ahead of the curve with me, a transformative force in the industry. 
+        </p>
+
+
+        <div class="tab-title">
+        <p class="tab-link active-link" onclick="opentab('Skills')">Skills</p>
+
+
+        <p class="tab-link"  onclick="opentab('Experiences')">Experiences</p>
+
+        <p class="tab-link" onclick="opentab('Education')">Education</p>
+        </div>
+
+
+<div class="tab-content active-tab skill" id="Skills">
+    <p class="any"><span>abc<br></span>xyz</li></p>
+       <p  class="any"><span>abcd<br></span>xyz1</li></p>
+          <p class="any"><span>abcde<br></span>xyz12</li></p>
+     
+</div>
+
+<div class="tab-content Edu" id="Experiences">
+    <p class="any"><span>abcd<br></span>xyz1</li></p>
+       <p  class="any"><span>abcde<br></span>xyz12</li></p>
+          <p class="any"><span>abcdef<br></span>xyz123</li></p>
+     
+</div>
+
+<div class="tab-content Edu" id="Education" >
+    <p class="any"><span>abcd<br></span>xyz12</li></p>
+       <p  class="any"><span>abcde<br></span>xyz124</li></p>
+          <p class="any"><span>abcdef<br></span>xyz1235</li></p>
+
+       
+</div>
+
+</div>
+</div>
+
+<!-- ------------------SERVICES---------------------->
+
+<div class="section">
+<div class="title">
+<h1> Our  services</h1>
+</div>
+<div class="service-list">
+<div class="card">
+<div class="icon">
+    <i class="material-symbols-outlined"> </i>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Script -->
+<script>
+
+// let tablinks = document.getElementsByClassName("tab-links");
+// let tabcontent = document.getElementsByClassName("tab-content")
+
+
+// function opentab (tabname){
+
+//     for(tablink of tablinks){
+//       tablink.classlist.remove("active-link")  ;
+//     }
+//     for(tabcontents of tabcontent){
+//         tabcontents.classlist.remove("active-tab");
+//     }
+// }
+
+
+let tablinks = document.getElementsByClassName("tab-link");
+let tabcontent = document.getElementsByClassName("tab-content");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontents of tabcontent){
+        tabcontents.classList.remove("active-tab");
+    }
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+
+</script>
+
+</body>
+</html>
